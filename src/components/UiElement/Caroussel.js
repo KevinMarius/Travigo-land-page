@@ -145,7 +145,7 @@ export default function Caroussel() {
 
                         <div
                             ref={carousel}
-                            className="relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+                            className="relative flex gap-6 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
                         >
                             {data.resources.map((resource, index) => {
                                 return (

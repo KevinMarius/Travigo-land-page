@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Caros;
+    src: url("./assets/fonts/cretype  Caros Bold.otf") format("opentype");
+    src: url("./assets/fonts/cretype  Caros ExtraBold.otf") format("opentype");
+    src: url("./assets/fonts/cretype  Caros ExtraLight.otf") format("opentype");
+    src: url("./assets/fonts/cretype  Caros Light.otf") format("opentype");
+    src: url("./assets/fonts/cretype  Caros Medium.otf") format("opentype");
+}
