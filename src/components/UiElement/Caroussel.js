@@ -5,49 +5,7 @@ import data from './data.json';
 
 export default function Caroussel() {
     const items = [];
-
-    /* return (
-
-        <div id="controls-carousel" className="w-full" data-carousel="static">
-            <div className="relative h-40 overflow-hidden rounded-lg md:h-96">
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item="active">
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-                <div className="hidden w-1/4 duration-700 ease-in-out" data-carousel-item>
-                    <img src={process.env.PUBLIC_URL + '/kawe-rodrigues-z5k8HD82g9c-unsplash (1).jpg'} className="absolute block w-full translate-x-40 -translate-y-36 top-1/2 left-1/2 px-2" alt="..." />
-                </div>
-            </div>
-            <button type="button" className="absolute top-4 right-20 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span className="inline-flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-slate-300 bg-white dark:bg-gray-800/30 group-hover:bg-purple-500 dark:group-hover:bg-gray-800/60 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" className="w-6 h-6 text-gray-800 dark:text-gray-800 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span className="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" className="absolute top-4 right-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span className="inline-flex items-center justify-center w-14 h-14 rounded-full shadow-lg shadow-slate-300 bg-white dark:bg-gray-800/30 group-hover:bg-purple-500 dark:group-hover:bg-gray-800/60 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" className="w-6 h-6 text-gray-800 dark:text-white group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span className="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
-
-    ) */
-
+    
     const maxScrollWidth = useRef(0);
     const [currentIndex, setCurrentIndex] = useState(0);
     const carousel = useRef(null);
